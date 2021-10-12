@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url(./bodybg.css);
+
+.grid {
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+.bg-game {
+    background-color: #F3F4F6;
+    height: 90vh;
+}
+
+.active {
+    background-color: #E5E7EB;
+}
+
+.tab-score {
+    height: 45vh;
+}
+
+.current-score {
+    background-color: #EF4444;
+    min-width: 20%;
+}
+
+.score {
+    color: #EF4444;
+}
+
+.current-score-text {
+    color: white;
+}
+
+.name-player {
+    position: relative;
+}
+
+.name-player::after {
+    content: " ";
+    position: absolute;
+    display: inline-block ;
+    top: 15px;
+    left: 280px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #EF4444;
+}
+
+.container-btn {
+    position: absolute;
+    height: 115px;
+    bottom: 21.2vh;
+}
+
+.roll::before {
+    content: url(../media/icon/restart.png);
+}
+
+.hold::before {
+    content: url(../media/icon/download.png);
+}
+
+.container-newg {
+    position: absolute;
+    height: 115px;
+    top: 15vh;
+}
+
+.newg::before {
+    content: url(../media/icon/add.png);
+}
+
+.container-dice {
+    position: absolute;
+    height: 115px;
+    top: 50vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .name-player::after {
+        width: 10px;
+        height: 10px;
+        left: 70px;
+        top: 7.5px;
+    }
+    .container-btn {
+        height: 70px;
+    }
+    .container-dice {
+        top: 40vh;
+    }
+}
