@@ -5,11 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS entrainement</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
-
+    <main class="grid grid-cols-2 items-center justify-items-center p-8">
+        <div class="container-dice flex flex-col justify-between">
+            <p class="dice lg:text-4xl">dice</p>
+        </div>
+        <div class="container-newg flex flex-col justify-between">
+            <a class="text-center lg:text-4xl newg" href="#"> New game</a>
+        </div>
+        <div class="container-btn flex flex-col justify-between">
+            <a class="text-center lg:text-4xl roll P1" href="#"> Roll Dice</a>
+            <a class="text-center lg:text-4xl hold" href="#"> Hold</a>
+        </div>
+        <div class="bg-game container flex flex-col justify-center items-center active">
+            <div class="container tab-score flex flex-col justify-center items-center">
+                <h1 class="text-center lg:text-6xl name-player titleP1">Player 1</h1>
+                <p class="text-center lg:text-9xl score score-p1">0</p>
+            </div>
+            <div class="container tab-score flex justify-center items-center">
+                <div class="current-score p-4">
+                    <h4 class="text-center lg:text-2xl">Current</h4>
+                    <p class="text-center current-score-text lg:text-4xl score-text-p1">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-game container flex flex-col justify-center items-center">
+            <div class="container tab-score flex flex-col justify-center items-center">
+                <h1 class="text-center lg:text-6xl titleP2">Player 2</h1>
+                <p class="text-center lg:text-9xl score score-p2">0</p>
+            </div>
+            <div class="container tab-score flex justify-center items-center">
+                <div class="current-score p-4">
+                    <h4 class="text-center lg:text-2xl">Current</h4>
+                    <p class="text-center current-score-text lg:text-4xl score-text-p2">0</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./JS/main.js"></script>
 </body>
 
 </html>
